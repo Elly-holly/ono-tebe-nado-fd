@@ -1,1 +1,67 @@
-/* место для вашего кода */
+.header {
+  padding: 94px 50px;
+}
+
+.cover {
+  min-height: 1100px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.description {
+
+}
+
+.lots {
+  padding: 180px 24px 120px;
+}
+
+.about {
+  padding: 120px 24px 180px;
+}
+
+.footer {
+   padding: 180px 24px 0;
+}
+
+body {
+background-color: #FFFFFF;
+}
+
+
+.cover__title {
+  width: 100%;
+  color: #FFFFFF;
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  text-transform: uppercase;
+
+}
+
+h2 {
+text-transform: uppercase;
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+
+nav {
+  text-transform: lowercase;    
+}
+
+button {
+  text-transform: uppercase; 
+}
