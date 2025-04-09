@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-
+<!-- Блок хэдер -->
   <body>
     <header class="header">
-      <nav></nav>
-      <a></a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-bullet-none">
+            <a class="header-nav-link">Главная</a>
+          </li>
+          <li> 
+            <a class="header-nav-link" href="#0">Посмотреть лоты</a>
+          </li>
+          <li>
+            <a class="header-nav-link" href="#0">Об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header-logo">
+        <img 
+        src="./images/logo-black.svg"
+        alt="Логотип проекта"
+        >
+      </a>
       <address></address>
     </header>
-
+<!-- Блок ковер -->
     <main>
       <section class="cover">
         <h1 class="cover__title">Оно тебе надо</h1>
@@ -25,7 +42,7 @@
           <button>сделать ставку</button>
         </div>
       </section>
-
+<!-- Блок с карточками -->
       <section class="lots">
         <h2>Лоты</h2>
         <ul>
@@ -47,7 +64,7 @@
         </ul>
         <a>посмотреть больше</a>
       </section>
-
+<!-- Блок об аукционе -->
       <section class="about">
         <container></container>
         <container>
@@ -58,7 +75,7 @@
         </container>
       </section>
     </main>
-
+<!-- Блок футер -->
     <footer class="footer">
     <address></address>
     <nav>
