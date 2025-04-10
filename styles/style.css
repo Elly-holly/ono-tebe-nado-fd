@@ -5,34 +5,102 @@
   align-items: center;
 }
 
-.header-nav {
+.header__menu {
   
 }
 
-.header-nav-list {
+.header__links-list {
   display: flex;
   gap: 40px;
-  list-style-type: circle;
+  list-style: circle;
+  text-transform: lowercase; 
+  text-underline-offset: 4px;
 }
 
-.header-nav-bullet-none {
-  list-style-type: none;
+.header__links-list-item {
+   
 }
 
-.header-logo {
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  font-size: 18px;
+  line-height: 135%;
+  color: #000;
+}
+
+.header__link_active .header__link {
+  text-decoration: none;
+}
+
+.header__links-list-item {
+
+}
+
+.header__logo {
   display: block;
   width: 148px;
-  height: 105px;
 }
 
+.header__logo-image {
+  width: 100%;
+}
+
+.address {
+  max-width: 240px;
+  width: 100%;
+  height: 100px;
+  text-underline-offset: 4px;
+}
+
+.header__address {
+  justify-self: end;
+}
 
 .cover {
+  position: relative;
   padding: 165px 50px 50px 50px;
-  min-height: 1100px;
+  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
+  background-size: 125%;
+}
+
+.overlay { 
+  position: absolute;
+  background: rgb(0 0 0 / 0.6);
+  width: 1100px;
+  height: 757px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cover__title {
+  width: 100%;
+  color: #fff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+  padding: 165px 50px 50px 50px;
+  letter-spacing: 0.3em;
+}
+
+.aligned-text {
+display: block;
+}
+
+.aligned-text_center {
+text-align: center;
+}
+
+.aligned-text_right {
+text-align: right;
 }
 
 .lots {
@@ -48,21 +116,13 @@
 }
 
 .description {
-
+  line-height: 10px;
 }
 
-.cover__title {
-  width: 100%;
-  color: #fff;
-  font-family: Raleway, sans-serif;
-  font-weight: bold;
-  font-size: 100px;
-  text-transform: uppercase;
 
-}
 
 h2 {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -70,16 +130,14 @@ h3 {
 }
 
 p {
-
+  font-size: 18px;
+  line-height: 135%;
+  color: #000;
+  font-style: normal;
 }
 
 a {
-
-}
-
-
-nav {
-  text-transform: lowercase;    
+  font-style: normal;
 }
 
 button {

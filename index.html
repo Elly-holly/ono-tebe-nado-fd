@@ -12,35 +12,46 @@
 <!-- Блок хэдер -->
   <body>
     <header class="header">
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-bullet-none">
-            <a class="header-nav-link">Главная</a>
+      <nav class="header__menu">
+        <ul class="header__links-list">
+          <li class="header__links-list-item_no-bullit header__link_active">
+            <a class="header__link">Главная</a>
           </li>
-          <li> 
-            <a class="header-nav-link" href="#0">Посмотреть лоты</a>
+          <li class="header__links-list-item"> 
+            <a class="header__link" href="#0">Посмотреть лоты</a>
           </li>
-          <li>
-            <a class="header-nav-link" href="#0">Об аукционе</a>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">Об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header-logo">
-        <img 
+      <a class="header__logo">
+        <img
+        class="header__logo-image"
         src="./images/logo-black.svg"
         alt="Логотип проекта"
         >
       </a>
-      <address></address>
+      <address class="address header__address">
+        <a href="tel:+70000000">+9 999 555 5555</a><br>
+        <a href="mailto:mail@example.com">info@sobaka.ge</a><br>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
 <!-- Блок ковер -->
     <main>
       <section class="cover">
-        <h1 class="cover__title">Оно тебе надо</h1>
+        <div class="overlay">
+        <h1 class="cover__title">
+          <span class="aligned-text">Оно</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right">надо</span>
+        </h1>
         <div class="description">
           <p>аукцион вещей, в которые никто не верил</p>
           <button>сделать ставку</button>
         </div>
+      </div>
       </section>
 <!-- Блок с карточками -->
       <section class="lots">
