@@ -9,7 +9,7 @@
   display: flex;
   gap: 33px;
   list-style: circle;
-  text-transform: lowercase; 
+  text-transform: lowercase;
   text-underline-offset: 2px;
 }
 
@@ -21,7 +21,6 @@
   font-size: 18px;
   line-height: 135%;
   font-weight: 400;
-  font-size: 18px;
   color: #000;
 }
 
@@ -66,7 +65,7 @@
   background-size: 125%;
 }
 
-.overlay { 
+.overlay {
   position: absolute;
   background: rgb(0 0 0 / 0.6);
   width: 100%;
@@ -125,7 +124,7 @@
 }
 
 .bet-button {
-  text-transform: uppercase; 
+  text-transform: uppercase;
   background-color: transparent;
   color: #fff;
   font-weight: 500;
@@ -285,7 +284,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: #000;
-  text-transform: lowercase; 
+  text-transform: lowercase;
 }
 
 .footer__address {
