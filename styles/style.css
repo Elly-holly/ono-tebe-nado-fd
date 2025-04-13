@@ -1,16 +1,16 @@
 .header {
-  padding: 96px 50px 94px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
+  padding: 96px 50px 94px;
 }
 
 .header__links-list {
   display: flex;
   gap: 33px;
-  list-style: circle;
-  text-transform: lowercase;
   text-underline-offset: 3px;
+  text-transform: lowercase;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -18,10 +18,10 @@
 }
 
 .header__link {
+  color: #000;
+  font-weight: 400;
   font-size: 18px;
   line-height: 135%;
-  font-weight: 400;
-  color: #000;
 }
 
 .header__link_active .header__link {
@@ -30,8 +30,8 @@
 
 .header__logo {
   display: block;
-  width: 148px;
   align-items: center;
+  width: 148px;
 }
 
 .header__logo-image {
@@ -40,14 +40,14 @@
 }
 
 .address {
-  max-width: 240px;
   width: 100%;
-  text-underline-offset: 3px;
+  max-width: 240px;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
-  line-height: 136%;
-  color: #000;
   font-style: normal;
+  line-height: 136%;
+  text-underline-offset: 3px;
 }
 
 .header__address {
@@ -56,8 +56,8 @@
 
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
   min-height: 757px;
+  padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -66,23 +66,23 @@
 
 .overlay {
   position: absolute;
-  background: rgb(0 0 0 / 0.6);
-  width: 100%;
-  height: 100%;
   inset : 0;
   z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 0.6);
 }
 
 .cover__title {
   width: 100%;
+  padding: 165px 50px 50px;
   color: #fff;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 100px;
   line-height: 115%;
-  text-transform: uppercase;
-  padding: 165px 50px 50px;
   letter-spacing: 0.3em;
+  text-transform: uppercase;
 }
 
 .aligned-text {
@@ -90,33 +90,33 @@
 }
 
 .aligned-text_center {
-  text-align: center;
   margin-top: 20px;
   margin-left: 30px;
+  text-align: center;
 }
 
 .aligned-text_right {
-  text-align: right;
   margin-top: 21px;
   margin-right: -30px;
+  text-align: right;
 }
 
 .cover__description {
   display: flex;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-top: 55px;
   align-items: center;
+  padding-top: 55px;
   padding-right: 50px;
+  padding-left: 50px;
 }
 
 .cover__description-text {
-  font-style: normal;
   color: #fff;
-  letter-spacing: normal;
   font-weight: 400;
   font-size: 22px;
+  font-style: normal;
   line-height: 125%;
+  letter-spacing: normal;
   text-transform: uppercase;
   word-spacing: 18.6px;
 }
@@ -126,15 +126,15 @@ button {
 }
 
 .bet-button {
-  text-transform: uppercase;
-  background-color: transparent;
+  width: 256px;
+  height: 51px;
+  border: 1px solid #fff;
   color: #fff;
   font-weight: 500;
   font-size: 22px;
   text-align: center;
-  border: 1px solid #fff;
-  width: 256px;
-  height: 51px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
 .lots {
@@ -142,19 +142,19 @@ button {
 }
 
 .lots__heading {
+  padding: 0 40px;
+  color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
-  padding: 0 40px;
 }
 
 .lots__card-list {
-  list-style: none;
   display: flex;
-  gap: 25px;
   flex-wrap: wrap;
+  gap: 25px;
   padding: 27px 0 0;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -169,13 +169,13 @@ button {
 .card {
   position: relative;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  padding: 48px 40px;
+  justify-content: space-between;
   height: 100%;
+  padding: 48px 40px;
   color: #fff;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
@@ -183,28 +183,28 @@ button {
 }
 
 .card__title {
-  display: flex;
   position: relative;
-  text-decoration: underline;
+  z-index: 2;
+  display: flex;
+  color: #fff;
   font-weight: 700;
   font-size: 22px;
-  z-index: 2;
   line-height: 119%;
-  text-transform: uppercase;
-  color: #fff;
+  text-decoration: underline;
   text-underline-offset: 3px;
+  text-transform: uppercase;
 }
 
 .card__text {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 120%;
-  color: #fff;
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: relative;
-  z-index: 2;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .card_type_book {
@@ -216,21 +216,21 @@ button {
 }
 
 .lots__look-more-link {
-  font-weight: 400;
-  font-size: 20px;
-  color: #000;
+  display: inline-block;
   margin-top: 30px;
   margin-left: 40px;
-  display: inline-block;
+  color: #000;
+  font-weight: 400;
+  font-size: 20px;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
 .about {
-  padding: 35px 0 13px 24px;
   display: grid;
   grid-template-columns: 360px 1fr;
   grid-template-rows: auto;
+  padding: 35px 0 13px 24px;
 }
 
 .about__column {
@@ -238,13 +238,13 @@ button {
 }
 
 .about__logo {
-  background-color: #000;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .about__logo-image {
@@ -253,22 +253,22 @@ button {
 }
 
 .about__title {
+  padding-top: 100px;
+  color: #000;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
-  color: #000;
-  padding-top: 100px;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-right: 26px;
+  color: #000;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
-  color: #000;
-  padding-right: 26px;
 }
 
 .about__text {
@@ -276,9 +276,9 @@ padding-top: 100px;
 }
 
 .footer {
-  padding: 167px 50px 82px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 167px 50px 82px;
   color: #000;
   text-transform: lowercase;
 }
@@ -290,9 +290,9 @@ padding-top: 100px;
 }
 
 .footer__menu-list {
-  list-style: none;
   font-weight: 400;
   font-size: 18px;
+  list-style: none;
 }
 
 .footer__menu-list-item {
